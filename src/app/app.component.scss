@@ -1,0 +1,31 @@
+@import "~@angular/material/theming";
+@import "src/theme";
+
+mat-toolbar {
+  @include mat-elevation(1);
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  z-index: 100;
+  .title {
+    font-family: "Righteous", sans-serif;
+    transition: all 0.8s ease-in-out;
+  }
+  &.expanded {
+    @include mat-elevation(0);
+    height: 88px;
+    .title {
+      font-size: xx-large;
+    }
+  }
+}
+.section {
+  .screen {
+    color: white;
+    height: 100%;
+    padding: 72px 8px 8px;
+    background: mat-color($app-primary);
+  }
+  &:first-child .screen {
+    padding-top: 100px;
+  }
+}

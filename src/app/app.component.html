@@ -1,1 +1,14 @@
-Hello Angular
+<mat-toolbar color="primary" [class.expanded]="isFirst">
+  <span class="title">{{title}}</span>
+</mat-toolbar>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="section">
+    <div class="screen">Screen 1</div>
+  </div>
+  <div class="section" (click)="fullpageAPI.moveSectionDown()">
+    <div class="screen">Screen 2</div>
+  </div>
+  <div class="section">
+    <div class="screen">Last screen</div>
+  </div>
+</div>
