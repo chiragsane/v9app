@@ -19,7 +19,7 @@ export class AppComponent {
 
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['', '', '', '', ''],
+      anchors: ['', '', ''],
       menu: '#menu',
 
       navigation: true,

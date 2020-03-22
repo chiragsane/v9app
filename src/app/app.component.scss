@@ -4,11 +4,14 @@
 mat-toolbar {
   @include mat-elevation(8);
   position: absolute;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 100;
   .title {
     font-family: "Righteous", sans-serif;
     transition: all 0.4s ease-in-out;
+  }
+  .filler {
+    flex-grow: 1;
   }
   &.expanded {
     @include mat-elevation(0);
@@ -22,9 +25,6 @@ mat-toolbar {
   .screen {
     height: 100%;
     padding: 72px 8px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   &:first-child .screen {
     padding-top: 100px;

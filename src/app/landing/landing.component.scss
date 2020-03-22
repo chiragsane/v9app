@@ -1,0 +1,28 @@
+.description {
+  height: 100px;
+  border-color: #00000033;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  margin-right: 20px;
+  padding: 40px 20px;
+}
+.angularLogo {
+  width: 200px;
+  height: 200px;
+  background: url("src/assets/angular-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+  .description {
+    border-width: 1px  0 0 0;
+    margin-top: 20px;
+    padding: 20px 40px;
+    text-align: center;
+  }  
+}

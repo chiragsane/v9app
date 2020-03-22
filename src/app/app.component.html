@@ -1,16 +1,23 @@
 <mat-toolbar color="primary" [class.expanded]="isFirst">
-  <span class="title">{{title}}</span>
+  <span class="title" (click)="fullpageAPI.moveTo(1)">{{ title }}</span>
+  <span class="filler"></span>
+  <button mat-button (click)="fullpageAPI.moveTo(2)">About</button>
+  <button mat-button (click)="fullpageAPI.moveTo(3)">Contact</button>
 </mat-toolbar>
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">
     <div class="screen">
-        <span>Hi there, This is a demo angular project which I built to test version 9.</span>
+      <app-landing></app-landing>
     </div>
   </div>
-  <div class="section" (click)="fullpageAPI.moveSectionDown()">
-    <div class="screen">Screen 2</div>
+  <div class="section">
+    <div class="screen">
+      <app-about></app-about>
+    </div>
   </div>
   <div class="section">
-    <div class="screen">Last screen</div>
+    <div class="screen">
+      <app-contact></app-contact>
+    </div>
   </div>
 </div>
