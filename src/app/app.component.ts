@@ -21,7 +21,9 @@ export class AppComponent {
       licenseKey: 'YOUR LICENSE KEY HERE',
       anchors: ['', '', '', '', ''],
       menu: '#menu',
+
       navigation: true,
+
       onLeave: (origin: any, destination: any, direction: any) => {
         this.isFirst = destination.isFirst;
       }

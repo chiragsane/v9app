@@ -2,30 +2,33 @@
 @import "src/theme";
 
 mat-toolbar {
-  @include mat-elevation(1);
+  @include mat-elevation(8);
   position: absolute;
   transition: all 0.8s ease-in-out;
   z-index: 100;
   .title {
     font-family: "Righteous", sans-serif;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   &.expanded {
     @include mat-elevation(0);
     height: 88px;
     .title {
-      font-size: xx-large;
+      font-size: 36px;
     }
   }
 }
 .section {
   .screen {
-    color: white;
     height: 100%;
     padding: 72px 8px 8px;
-    background: mat-color($app-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &:first-child .screen {
     padding-top: 100px;
+    color: white;
+    background: mat-color($app-primary);
   }
 }

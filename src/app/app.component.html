@@ -3,7 +3,9 @@
 </mat-toolbar>
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">
-    <div class="screen">Screen 1</div>
+    <div class="screen">
+        <span>Hi there, This is a demo angular project which I built to test version 9.</span>
+    </div>
   </div>
   <div class="section" (click)="fullpageAPI.moveSectionDown()">
     <div class="screen">Screen 2</div>
